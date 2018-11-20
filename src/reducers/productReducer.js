@@ -1,7 +1,7 @@
 import * as types from '../constants/types'
 
 const INITIAL_STATE = {
-  products: []
+  products: [],
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -19,6 +19,10 @@ export default function (state = INITIAL_STATE, action) {
             ({...product, compare: !product.compare}) :
             product
         )
+      };
+    case types.DO_ADD_PRODUCT:
+      return {
+        ...state, products: [...state.products, action.product]
       };
     default:
       return state
