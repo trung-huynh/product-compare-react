@@ -1,0 +1,13 @@
+@import '../../styles/_variables.scss';
+
+.home {
+  h2 {
+    display: inline-block;
+  }
+}
+
+.btn-add-product {
+  position: absolute;
+  margin-left: 30px;
+  border: 1px solid #eee;
+}
